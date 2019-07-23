@@ -1,0 +1,24 @@
+.user-panel {
+    font-size: 1.6rem;
+
+    & .nav-item {
+        // background-color: #333;
+        // color: #fff;
+        cursor: pointer;
+    }
+
+    & .nav-tabs .nav-link.active {
+        background-color: #333;
+        border-color: #333 #333 #333;
+        color: #fff;
+    }
+
+    & .nav-tabs .nav-link:hover {
+        border-color: #e9ecef #e9ecef #888;
+    }
+
+    & .nav-tabs {
+        border-bottom: 1px solid #888;
+        margin-bottom: 1rem;
+    }
+}

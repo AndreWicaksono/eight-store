@@ -1,0 +1,46 @@
+@import './global-variables.scss';
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    // Global reset of html element
+    box-sizing: border-box;
+    font-size: 62.5%; // Global Font Size | 1rem = 10px | 10px/16px * 100% = 62.5%
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    padding: 2rem 6rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 2rem 0;
+    }
+}
+
+a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.app {
+    border: .2rem solid #333;
+
+    @media only screen and (max-width: $bp-smallest) {
+        border: none;
+        padding: 0;
+    }
+}
+
+.header, .homepage {
+    padding: 0 2rem;
+}

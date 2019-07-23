@@ -1,0 +1,20 @@
+.catalog-item {
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+
+    & .product-image {
+        background-size: cover;
+        width: 27rem;
+        height: 30rem;
+    }
+
+    & .product-detail {
+        display: flex;
+        flex-direction: column;
+
+        & .product-name {
+            font-weight: bold;
+        }
+    }
+    
+}

@@ -1,0 +1,37 @@
+@import '../../global-variables.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1.7rem;
+    padding: 2rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
+
+    & .store-id {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: 'Satisfy', cursive;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    & .logo {
+        margin-right: 1rem;
+        width: 5.6rem;
+    }
+}
+
+.menu-list {
+    & .menu-item:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+}
