@@ -1,0 +1,39 @@
+@import '../../global-variables.scss';
+
+.login {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+
+    .ask-account {
+        font-size: 1.2rem;
+    }
+    &-form {
+        margin: 0 auto;
+        max-width: 50%;
+
+        & button {
+            font-size: 1.4rem;
+        }
+    }
+
+    & .form-control {
+        font-size: 1.3rem;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+
+    &-footer {
+
+        & button {
+            @media only screen and (max-width: $bp-small) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
+    }
+}

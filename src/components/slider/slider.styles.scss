@@ -1,0 +1,19 @@
+.carousel {
+    margin-bottom: 3rem;
+}
+
+.carousel-item {
+    height: 90vh;
+    width: 100vw;
+
+    position: initial;
+    overflow: hidden;
+    
+    & img {
+        display: block;
+        height: 90vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 import './log-in.styles.scss';
 
@@ -7,44 +8,23 @@ class LogIn extends React.Component {
     render() {
         return (
             <div className='login'>
-                <InputGroup>
-                    <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-                    <Input placeholder="username" />
-                </InputGroup>
-                <br />
-                <InputGroup>
-                    <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                        <Input addon type="checkbox" aria-label="Checkbox for following text input" />
-                    </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Check it out" />
-                </InputGroup>
-                <br />
-                <InputGroup>
-                    <Input placeholder="username" />
-                    <InputGroupAddon addonType="append">
-                    <InputGroupText>@example.com</InputGroupText>
-                    </InputGroupAddon>
-                </InputGroup>
-                <br />
-                <InputGroup>
-                    <InputGroupAddon addonType="prepend">
-                    <InputGroupText>$</InputGroupText>
-                    <InputGroupText>$</InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Dolla dolla billz yo!" />
-                    <InputGroupAddon addonType="append">
-                    <InputGroupText>$</InputGroupText>
-                    <InputGroupText>$</InputGroupText>
-                    </InputGroupAddon>
-                </InputGroup>
-                <br />
-                <InputGroup>
-                    <InputGroupAddon addonType="prepend">$</InputGroupAddon>
-                    <Input placeholder="Amount" min={0} max={100} type="number" step="1" />
-                    <InputGroupAddon addonType="append">.00</InputGroupAddon>
-                </InputGroup>
+                <Container>
+                    <Form className='login-form'>
+                        <FormGroup>
+                            <Label for="exampleEmail">E-mail</Label>
+                            <Input type="email" name="email" id="exampleEmail" placeholder="Alamat e-mail" required/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="examplePassword">Password</Label>
+                            <Input type="password" name="password" id="examplePassword" placeholder="Password" required/>
+                        </FormGroup>
+                        
+                        <div className="login-footer d-flex justify-content-between align-items-center">
+                            <Button color='light'>Login</Button>
+                            <span className='ask-account'>Belum punya akun? Daftar <Link to='/register'>di sini</Link></span>
+                        </div>
+                    </Form>
+                </Container>
             </div>
         );
     };
