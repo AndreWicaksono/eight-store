@@ -12,18 +12,18 @@ import './slider.styles.scss';
 const items = [
   {
     src: require('../../assets/slide-1.jpg'),
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: '8 Store',
+    caption: '8 Store'
   },
   {
     src: require('../../assets/slide-2.jpg'),
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'Best Seller',
+    caption: 'Best Seller'
   },
   {
     src: require('../../assets/slide-3.jpg'),
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'New Product',
+    caption: 'New Product'
   }
 ];
 

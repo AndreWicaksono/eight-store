@@ -60,7 +60,7 @@ class UserProfile extends React.Component {
             <TabPane tabId="1">
               <Row>
                 <Col sm="12">
-                  <h4>Tab 1 Contents</h4>
+                  <h4>-</h4>
                 </Col>
               </Row>
             </TabPane>

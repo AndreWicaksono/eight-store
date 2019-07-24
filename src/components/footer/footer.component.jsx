@@ -17,7 +17,7 @@ const Footer = () => (
                     <li className="nav-item">Tentang Kami</li>
                 </ul>
             </div>
-            <div>
+            <div className='follow-us'>
                 <h3>Ikuti Kami di</h3>
                 <ul className="nav-social">
                     <svg className='social social-fb' fill='#395794'><FacebookIcon/></svg>

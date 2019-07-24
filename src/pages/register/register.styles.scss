@@ -1,0 +1,26 @@
+.register {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+
+    & button {
+        font-size: 1.4rem;
+    }
+
+    &-form {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    & .form-control {
+        font-size: 1.3rem;
+    }
+
+    & .form-check-label {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    & .form-check p {
+        margin-left: .5rem;
+    }
+}
