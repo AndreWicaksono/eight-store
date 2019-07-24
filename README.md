@@ -23,6 +23,10 @@ Setiap halaman bisa diakses melalui navbar.
 Project ini menggunakan Yarn Package Manager.
 Ketik perintah berikut di terminal:
 
+### `yarn`
+Jalankan perintah ini saat pertama kali setelah clone dilakukan untuk meng-install module yang diperlukan.
+
+
 ### `yarn start`
 
 Untuk menjalankan di development mode.<br>
