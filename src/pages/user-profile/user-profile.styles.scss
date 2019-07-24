@@ -1,5 +1,46 @@
+@import '../../global-variables.scss';
+
 .user-panel {
+    display: flex;
     font-size: 1.6rem;
+    height: 100vh;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
+    
+    & .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-right: .08rem solid #333;
+        padding-right: 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            border-right: none;
+            padding-right: 0;
+        }
+    }
+
+    & .avatar {
+        background-image: url('../../assets/andre.jpg');
+        background-size: cover;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+
+        width: 11rem;
+        height: 11rem;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    & .nav-container {
+        max-width: 80rem;
+        padding: 3rem;
+    }
 
     & .nav-item {
         // background-color: #333;

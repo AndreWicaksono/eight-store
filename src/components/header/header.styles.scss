@@ -1,15 +1,36 @@
 @import '../../global-variables.scss';
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
 
     font-size: 1.7rem;
     padding: 2rem 3rem;
 
-    @media only screen and (max-width: $bp-small) {
-        flex-direction: column;
+    // @media only screen and (max-width: $bp-small) {
+    //     flex-direction: column;
+    // }
+    & .navbar-light .navbar-toggler {
+        border-color: #888;
+    }
+    
+    & .navbar-toggler:focus {
+        outline: .5rem auto #777
+    }
+
+    & .navbar-light .navbar-nav .nav-link {
+        color: inherit;
+    }
+
+    & .dropdown-item {
+        font-size: 1.4rem;
+        outline: none;
+        color: inherit;
+        
+        &:active {
+            background-color: transparent;
+        }
     }
 
     & .store-id {
